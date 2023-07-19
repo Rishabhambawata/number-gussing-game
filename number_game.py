@@ -1,13 +1,12 @@
 import random
-
 com_num=random.randrange(1,100)
-a=0
+counter=0
 try:
-    while a<=5:
+    while counter<=5:
         num=int(input("enter number\n"))
-        a=a+1
+        counter=counter+1
         if num==com_num:
-            print(f" the num is {com_num} you win {a} num of trys")
+            print(f" the num is {com_num} you win {counter} num of trys")
         elif num>com_num:
             print("your num is bigger")
         elif num<com_num:
